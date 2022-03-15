@@ -4,23 +4,23 @@ $font-body: "Lato", sans-serif;
 $font-display: "Seymour One", sans-serif;
 $font-cursive: "Caveat", cursive;
 
-$color-primary: #16697a;
-$color-secondary: #489fb5;
-$color-tertiary: #82c0cc;
+$color-primary: #014D64;
+$color-secondary: #0296A5;
+$color-tertiary: #0A4F57;
+$color-alt: #AE3C57;
+$color-highlight: #E75F73;
 $color-white: #ede7e3;
-$color-alt: #ffa62b;
+$color-black: #1C1A1D;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $font-body;
-    background-color: $color-primary;
     color: $color-white;
 }
 
 a:link,
 a:visited {
     text-decoration: none;
-    color: unset;
 }

@@ -4,12 +4,44 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  background-color: #16697a;
   color: #ede7e3;
 }
 
 a:link,
 a:visited {
   text-decoration: none;
-  color: unset;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 30px;
+  background-color: orange;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+}
+.navbar div {
+  transform: rotate(-5deg);
+}
+.navbar .logo {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+}
+.navbar .navList {
+  font-size: 20px;
+}
+.navbar .listItem {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 20px;
+}
+.navbar .listItem a:hover {
+  color: #AE3C57;
+}
+
+body {
+  height: 180vh;
+  background-color: #014D64;
 }
