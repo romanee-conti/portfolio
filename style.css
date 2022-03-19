@@ -10,37 +10,111 @@
 a:link,
 a:visited {
   text-decoration: none;
+  color: unset;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  height: 50px;
-  padding: 0 30px;
   background-color: orange;
   position: fixed;
   width: 100%;
   align-items: center;
+  line-height: 1;
 }
-.navbar div {
+.navbar .div-logo {
   transform: rotate(-5deg);
+  padding: 1rem 1rem;
 }
 .navbar .logo {
   font-family: "Caveat", cursive;
-  font-size: 30px;
+  font-size: 1.9rem;
 }
 .navbar .navList {
-  font-size: 20px;
+  font-size: 1.3rem;
+  margin: 0;
 }
 .navbar .listItem {
   display: inline-block;
   list-style-type: none;
-  padding: 0 20px;
+  padding: 10px 10px;
 }
 .navbar .listItem a:hover {
   color: #AE3C57;
 }
+.navbar .menu {
+  border: solid 0.25px #ede7e3;
+  padding: 5px;
+  border-radius: 6px;
+  display: none;
+}
+.navbar .menu-line {
+  height: 3px;
+  width: 20px;
+  background-color: #ede7e3;
+  margin: 3px auto;
+}
 
+@media all and (max-width: 490px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .menu {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+  .navbar .menu:hover {
+    cursor: pointer;
+  }
+  .navbar .navList {
+    width: 100%;
+    display: none;
+  }
+  .navbar .listItem {
+    display: block;
+    border-top: 1px solid #ede7e3;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar .div-logo {
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+  .navbar .active {
+    display: block;
+  }
+}
+/* tablet media query breakpoint */
+@media all and (min-width: 768px) {
+  .navbar .navList {
+    font-size: 1.6rem;
+  }
+
+  .navbar .logo {
+    font-size: 2.4rem;
+  }
+
+  .navbar .listItem {
+    padding: 10px 24px;
+  }
+}
+/* desktop media query breakpoint */
+@media all and (min-width: 1024px) {
+  .navbar .navList {
+    font-size: 2rem;
+  }
+
+  .navbar .logo {
+    font-size: 3.25rem;
+  }
+
+  .navbar .listItem {
+    padding: 10px 36px;
+  }
+}
 body {
   height: 180vh;
   background-color: #014D64;
