@@ -5,7 +5,6 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: orange;
     position: fixed;
     width: 100%;
     align-items: center;
@@ -51,6 +50,8 @@
         margin: 3px auto;
     }
 }
+
+/* mobile phone breakpoint */
 
 @media all and (max-width: 490px) {
     .navbar {
@@ -121,6 +122,50 @@
     .navbar .listItem {
         padding: 10px 36px;
     }
+}
+
+.header {
+    border: 1em solid red;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+
+    .intro {
+        text-align: center;
+        margin-top: 8rem;
+
+        &__heading {
+            font-family: $font-display;
+            font-size: 1.3rem;
+        }
+
+        &__subheading {
+            font-family: $font-cursive;
+            font-size: 1.7rem;
+        }
+
+        &__icon-div {
+            font-size: 1.5rem;
+            margin-top: 240px
+
+        }
+
+        &__icon {
+            display: block;
+            margin-top: 10px;
+        }
+    }
+}
+
+#shuttle {
+    transform: rotate(90deg)
+}
+
+
+.title-img {
+    width: 100%;
+    height: auto;
 }
 
 body {
