@@ -9,6 +9,8 @@
     width: 100%;
     align-items: center;
     line-height: 1;
+    transition: ease-in-out 0.3s;
+    z-index: 2;
 
     .div-logo {
         transform: rotate(-5deg);
@@ -51,6 +53,11 @@
     }
 }
 
+.nav-active {
+    background-color: $color-opaque;
+    transition: ease-in-out 0.3s;
+}
+
 /* mobile phone breakpoint */
 
 @media all and (max-width: 490px) {
@@ -76,8 +83,11 @@
         .listItem {
             display: block;
             border-top: 1px solid $color-white;
-            width: 100%;
             text-align: center;
+        }
+
+        .listItem:last-child {
+            border-bottom: 1px solid $color-white;
         }
 
         .div-logo {
@@ -91,6 +101,7 @@
         }
     }
 }
+
 /* tablet media query breakpoint */
 
 @media all and (min-width: 768px) {
@@ -116,7 +127,7 @@
     }
 
     .navbar .logo {
-        font-size: 3.25rem;
+        font-size: 3rem;
     }
 
     .navbar .listItem {
@@ -125,15 +136,16 @@
 }
 
 .header {
-    border: 1em solid red;
+    
     display: flex;
-    height: 80vh;
+    height: 110vh;
     justify-content: center;
     align-items: center;
+    background-image: url(/imgs/casey-horner-mPnxwQBtUZE-unsplash.jpg);
+    background-size: cover;
 
     .intro {
         text-align: center;
-        margin-top: 8rem;
 
         &__heading {
             font-family: $font-display;
@@ -147,26 +159,22 @@
 
         &__icon-div {
             font-size: 1.5rem;
-            margin-top: 240px
+            margin-top: 70%;
 
         }
 
         &__icon {
             display: block;
-            margin-top: 10px;
+            margin-top: 5%;
         }
     }
 }
 
 #shuttle {
-    transform: rotate(90deg)
+    transform: rotate(90deg);
+    z-index: 1;
 }
 
-
-.title-img {
-    width: 100%;
-    height: auto;
-}
 
 body {
     height: 180vh;
