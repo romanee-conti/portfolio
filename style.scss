@@ -140,7 +140,7 @@
     display: flex;
     height: 110vh;
     justify-content: center;
-    align-items: center;
+    padding-top: 55%;
     background-image: url(/imgs/casey-horner-mPnxwQBtUZE-unsplash.jpg);
     background-size: cover;
 
@@ -149,17 +149,17 @@
 
         &__heading {
             font-family: $font-display;
-            font-size: 1.3rem;
+            font-size: 1.45rem;
         }
 
         &__subheading {
             font-family: $font-cursive;
-            font-size: 1.7rem;
+            font-size: 1.9rem;
         }
 
         &__icon-div {
-            font-size: 1.5rem;
-            margin-top: 70%;
+            font-size: 1.6rem;
+            margin-top: 80%;
 
         }
 

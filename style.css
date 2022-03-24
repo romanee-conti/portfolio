@@ -128,7 +128,7 @@ a:visited {
   display: flex;
   height: 110vh;
   justify-content: center;
-  align-items: center;
+  padding-top: 55%;
   background-image: url(/imgs/casey-horner-mPnxwQBtUZE-unsplash.jpg);
   background-size: cover;
 }
@@ -137,15 +137,15 @@ a:visited {
 }
 .header .intro__heading {
   font-family: "Seymour One", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.45rem;
 }
 .header .intro__subheading {
   font-family: "Caveat", cursive;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 .header .intro__icon-div {
-  font-size: 1.5rem;
-  margin-top: 70%;
+  font-size: 1.6rem;
+  margin-top: 80%;
 }
 .header .intro__icon {
   display: block;
