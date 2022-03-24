@@ -136,7 +136,7 @@
 }
 
 .header {
-    
+
     display: flex;
     height: 110vh;
     justify-content: center;
@@ -148,7 +148,6 @@
         text-align: center;
 
         &__heading {
-            font-family: $font-display;
             font-size: 1.45rem;
         }
 
@@ -175,8 +174,89 @@
     z-index: 1;
 }
 
+/* Section "About" */
+
+.about {
+
+    &__title-con {
+        display: flex;
+        justify-content: center;
+        padding: 50% 0 12%;
+        /* top, horizontal, bottom */
+    }
+
+    &__img-div {
+        margin: 16% auto 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    &__icon-div {
+        font-size: 1.6rem;
+        margin-top: 10%;
+    }
+
+    &__text-container {
+        background-color: $color-primary;
+        padding: 50% 10% 20%;
+    }
+}
+
+/* Section "Projects" */
+
+.projects {
+
+    background-color: $color-secondary;
+    text-align: center;
+
+    &__heading {
+        padding-top: 30%;
+    }
+
+}
+
+/* General Classes for Elements */
+
+.project-card {
+    padding: 10% 10%;
+
+    &__img-div {
+        margin: 10% auto;
+    }
+
+    &__heading {
+        font-weight: 700;
+        margin-bottom: 10%;
+    }
+}
+
+.text-container {
+    text-align: center;
+}
+
+.img-div {
+    height: 200px;
+    width: 200px;
+    background-color: $color-alt;
+    border-radius: 100%;
+    border: solid 2px $color-highlight;
+}
+
+.icon {
+    padding: 6%;
+}
+
+.heading {
+    font-size: 2rem;
+    font-family: $font-display;
+}
 
 body {
-    height: 180vh;
+    background-color: $color-black;
+}
+
+.wave {
     background-color: $color-primary;
+    vertical-align: top;
 }

@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato:wght@400;700&family=Seymour+One&display=swap");
+/* @ 400 & 700 */
+/* @ one-size */
+/* @ 700 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
   color: #ede7e3;
 }
 
@@ -11,6 +15,10 @@ a:link,
 a:visited {
   text-decoration: none;
   color: unset;
+}
+
+p {
+  margin: 0;
 }
 
 .navbar {
@@ -136,7 +144,6 @@ a:visited {
   text-align: center;
 }
 .header .intro__heading {
-  font-family: "Seymour One", sans-serif;
   font-size: 1.45rem;
 }
 .header .intro__subheading {
@@ -157,7 +164,75 @@ a:visited {
   z-index: 1;
 }
 
-body {
-  height: 180vh;
+/* Section "About" */
+.about__title-con {
+  display: flex;
+  justify-content: center;
+  padding: 50% 0 12%;
+  /* top, horizontal, bottom */
+}
+.about__img-div {
+  margin: 16% auto 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.about__icon-div {
+  font-size: 1.6rem;
+  margin-top: 10%;
+}
+.about__text-container {
   background-color: #014d64;
+  padding: 50% 10% 20%;
+}
+
+/* Section "Projects" */
+.projects {
+  background-color: #0296A5;
+  text-align: center;
+}
+.projects__heading {
+  padding-top: 30%;
+}
+
+/* General Classes for Elements */
+.project-card {
+  padding: 10% 10%;
+}
+.project-card__img-div {
+  margin: 10% auto;
+}
+.project-card__heading {
+  font-weight: 700;
+  margin-bottom: 10%;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.img-div {
+  height: 200px;
+  width: 200px;
+  background-color: #AE3C57;
+  border-radius: 100%;
+  border: solid 2px #E75F73;
+}
+
+.icon {
+  padding: 6%;
+}
+
+.heading {
+  font-size: 2rem;
+  font-family: "Seymour One", sans-serif;
+}
+
+body {
+  background-color: #161010;
+}
+
+.wave {
+  background-color: #014d64;
+  vertical-align: top;
 }
