@@ -151,7 +151,6 @@ p {
   font-size: 1.9rem;
 }
 .header .intro__icon-div {
-  font-size: 1.6rem;
   margin-top: 80%;
 }
 .header .intro__icon {
@@ -178,7 +177,6 @@ p {
   right: 0;
 }
 .about__icon-div {
-  font-size: 1.6rem;
   margin-top: 10%;
 }
 .about__text-container {
@@ -195,6 +193,26 @@ p {
   padding-top: 30%;
 }
 
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #AE3C57;
+  font-size: 2rem;
+}
+.footer__icon-div {
+  width: 100%;
+}
+.footer__icon {
+  color: #E75F73;
+  padding: 3% 5%;
+}
+.footer__text {
+  color: #E75F73;
+  padding-bottom: 2%;
+}
+
 /* General Classes for Elements */
 .project-card {
   padding: 10% 10%;
@@ -205,6 +223,11 @@ p {
 .project-card__heading {
   font-weight: 700;
   margin-bottom: 10%;
+}
+
+.project-card:last-child {
+  background-color: #0A4F57;
+  padding-bottom: 30vh;
 }
 
 .text-container {
@@ -232,7 +255,16 @@ body {
   background-color: #161010;
 }
 
-.wave {
-  background-color: #014d64;
+.wave-blue {
   vertical-align: top;
+  background-color: #0296A5;
+}
+
+.wave-green {
+  vertical-align: top;
+  background-color: #0296A5;
+}
+
+i {
+  font-size: 1.6rem;
 }

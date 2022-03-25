@@ -157,7 +157,6 @@
         }
 
         &__icon-div {
-            font-size: 1.6rem;
             margin-top: 80%;
 
         }
@@ -193,7 +192,6 @@
     }
 
     &__icon-div {
-        font-size: 1.6rem;
         margin-top: 10%;
     }
 
@@ -216,6 +214,31 @@
 
 }
 
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-alt;
+    font-size: 2rem;
+
+    &__icon-div {
+        width: 100%;
+    }
+
+    &__icon {
+        color: $color-highlight;
+        padding: 3% 5%;
+    }
+
+    &__text {
+        color: $color-highlight;
+        padding-bottom: 2%;
+    }
+
+}
+
 /* General Classes for Elements */
 
 .project-card {
@@ -229,6 +252,11 @@
         font-weight: 700;
         margin-bottom: 10%;
     }
+}
+
+.project-card:last-child {
+    background-color: $color-tertiary;
+    padding-bottom: 30vh;
 }
 
 .text-container {
@@ -256,7 +284,16 @@ body {
     background-color: $color-black;
 }
 
-.wave {
-    background-color: $color-primary;
+.wave-blue {
     vertical-align: top;
+    background-color: $color-secondary;
+}
+
+.wave-green {
+    vertical-align: top;
+    background-color: $color-secondary;
+}
+
+i {
+    font-size: 1.6rem;
 }
