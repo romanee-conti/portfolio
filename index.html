@@ -43,7 +43,7 @@
         <div class="about__title-con" id="about">
             <h1 class="about__heading heading">About</h1>
             <div class="about__img-div img-div">
-
+                <img class="img-circ" src="./imgs/marcel-strauss-pXcfR2sluwY-unsplash.jpg" alt="portrait of Robert Phillips">
             </div>
         </div>
         <div class="about__text-container text-container">
@@ -72,7 +72,7 @@
         <h1 class="projects__heading heading">Projects</h1>
         <div class="project-card">
             <div class="project-card__img-div img-div">
-
+                <img src="./imgs/ivan-diaz-YOy-ek-aBR0-unsplash.jpg" alt="picture of a rocket" class="img-circ">
             </div>
             <h2 class="project-card__heading">Shuttle X</h2>
             <p class="project-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consectetur
@@ -81,6 +81,7 @@
         </div>
         <div class="project-card">
             <div class="project-card__img-div img-div">
+                <img src="./imgs/nasa-rTZW4f02zY8-unsplash.jpg" alt="picture of a planet" class="img-circ">
             </div>
             <h2 class="project-card__heading">Planet Y</h2>
             <p class="project-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consectetur
@@ -94,7 +95,7 @@
         </svg>
         <div class="project-card">
             <div class="project-card__img-div img-div">
-
+                <img src="./imgs/uninteneded-concept-52FZ4cO78Ns-unsplash.jpg" alt="picture of a UFO" class="img-circ">
             </div>
             <h2 class="project-card__heading">Enigma Z</h2>
             <p class="project-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consectetur
@@ -115,9 +116,19 @@
 <script>
     const toggleButton = document.getElementById('toggle-button')
     const naviList = document.getElementById('navi-list')
+    const navItem = document.querySelectorAll('.listItem')
 
     toggleButton.addEventListener('click', () => {
         naviList.classList.toggle('active');
+
+    })
+
+    navItem.forEach(function (item) {
+
+        item.addEventListener('click', () => {
+            naviList.classList.toggle('active');
+
+        })
     })
 
     const navbar = document.querySelector('.navbar');

@@ -269,6 +269,15 @@
     background-color: $color-alt;
     border-radius: 100%;
     border: solid 2px $color-highlight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-circ {
+    border-radius: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .icon {
