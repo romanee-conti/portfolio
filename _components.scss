@@ -114,6 +114,7 @@
     &__text-container {
         background-color: $color-primary;
         padding: 50% 10% 20%;
+        text-align: center;
     }
 }
 
@@ -173,10 +174,6 @@
 .project-card:last-child {
     background-color: $color-tertiary;
     padding-bottom: 30vh;
-}
-
-.text-container {
-    text-align: center;
 }
 
 .img-div {

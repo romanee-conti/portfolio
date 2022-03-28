@@ -124,6 +124,7 @@ body {
 .about__text-container {
   background-color: #014d64;
   padding: 50% 10% 20%;
+  text-align: center;
 }
 
 /* Section "Projects" */
@@ -170,10 +171,6 @@ body {
 .project-card:last-child {
   background-color: #0A4F57;
   padding-bottom: 30vh;
-}
-
-.text-container {
-  text-align: center;
 }
 
 .img-div {
@@ -258,8 +255,22 @@ body {
     font-size: 1.3rem;
   }
 
+  .header {
+    padding-top: 40%;
+  }
+
   i {
-    font-size: 2rem;
+    font-size: 140%;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .img-div {
+    height: 330px;
+    width: 330px;
+    border: solid 3px #E75F73;
   }
 
   .navbar__logo {
@@ -267,10 +278,6 @@ body {
   }
   .navbar__listItem {
     padding: 10px 24px;
-  }
-
-  .header {
-    padding-top: 40%;
   }
 
   .intro__heading {
@@ -281,6 +288,31 @@ body {
   }
   .intro__icon-div {
     margin-top: 38%;
+  }
+
+  .about__title-con {
+    padding-top: 40%;
+  }
+  .about__img-div {
+    margin-top: 14%;
+  }
+  .about__text-container {
+    padding-top: 40%;
+  }
+  .about__icon {
+    padding: 8%;
+  }
+
+  .projects__heading {
+    padding-top: 12%;
+  }
+
+  .project-card {
+    padding-top: 5%;
+  }
+
+  .footer {
+    background-color: #0A4F57;
   }
 }
 /* desktop media query breakpoint */

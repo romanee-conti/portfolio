@@ -55,8 +55,22 @@
         font-size: 1.3rem;
     }
 
+    .header {
+        padding-top: 40%;
+    }
+
     i {
-        font-size: 2rem;
+        font-size: 140%;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .img-div {
+        height: 330px;
+        width: 330px;
+        border: solid 3px $color-highlight;
     }
 
     .navbar {
@@ -69,12 +83,6 @@
             padding: 10px 24px;
         }
     }
-
-    .header {
-        padding-top: 40%;
-    }
-
-
 
     .intro {
 
@@ -89,6 +97,40 @@
         &__icon-div {
             margin-top: 38%;
         }
+    }
+
+    .about {
+
+        &__title-con {
+            padding-top: 40%;
+        }
+
+        &__img-div {
+            margin-top: 14%;
+        }
+
+        &__text-container {
+            padding-top: 40%;
+        }
+
+        &__icon {
+            padding: 8%;
+        }
+    }
+
+    .projects {
+
+        &__heading {
+            padding-top: 12%;
+        }
+    }
+
+    .project-card {
+        padding-top: 5%;
+    }
+
+    .footer {
+        background-color: $color-tertiary;
     }
 }
 
