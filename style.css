@@ -21,6 +21,15 @@ p {
   margin: 0;
 }
 
+i {
+  font-size: 120%;
+}
+
+body {
+  background-color: #161010;
+}
+
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -31,27 +40,26 @@ p {
   transition: ease-in-out 0.3s;
   z-index: 2;
 }
-.navbar .div-logo {
+.navbar__div-logo {
   transform: rotate(-5deg);
   padding: 1rem 1rem;
 }
-.navbar .logo {
+.navbar__logo {
   font-family: "Caveat", cursive;
   font-size: 1.9rem;
 }
-.navbar .navList {
-  font-size: 1.3rem;
+.navbar__navList {
   margin: 0;
 }
-.navbar .listItem {
+.navbar__listItem {
   display: inline-block;
   list-style-type: none;
   padding: 10px 10px;
 }
-.navbar .listItem a:hover {
+.navbar a:hover {
   color: #AE3C57;
 }
-.navbar .menu {
+.navbar__menu {
   border: solid 0.25px #ede7e3;
   padding: 5px;
   border-radius: 6px;
@@ -69,91 +77,22 @@ p {
   transition: ease-in-out 0.3s;
 }
 
-/* mobile phone breakpoint */
-@media all and (max-width: 490px) {
-  .navbar {
-    flex-direction: column;
-  }
-  .navbar .menu {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-  .navbar .menu:hover {
-    cursor: pointer;
-  }
-  .navbar .navList {
-    width: 100%;
-    display: none;
-  }
-  .navbar .listItem {
-    display: block;
-    border-top: 1px solid #ede7e3;
-    text-align: center;
-  }
-  .navbar .listItem:last-child {
-    border-bottom: 1px solid #ede7e3;
-  }
-  .navbar .div-logo {
-    width: 100%;
-    margin-bottom: 24px;
-    padding: 0;
-  }
-  .navbar .active {
-    display: block;
-  }
-}
-/* tablet media query breakpoint */
-@media all and (min-width: 768px) {
-  .navbar .navList {
-    font-size: 1.6rem;
-  }
-
-  .navbar .logo {
-    font-size: 2.4rem;
-  }
-
-  .navbar .listItem {
-    padding: 10px 24px;
-  }
-}
-/* desktop media query breakpoint */
-@media all and (min-width: 1024px) {
-  .navbar .navList {
-    font-size: 2rem;
-  }
-
-  .navbar .logo {
-    font-size: 3rem;
-  }
-
-  .navbar .listItem {
-    padding: 10px 36px;
-  }
-}
-.header {
-  display: flex;
-  height: 110vh;
-  justify-content: center;
-  padding-top: 55%;
-  background-image: url(/imgs/casey-horner-mPnxwQBtUZE-unsplash.jpg);
-  background-size: cover;
-}
-.header .intro {
+/* Intro / Landing Page */
+.intro {
   text-align: center;
 }
-.header .intro__heading {
-  font-size: 1.45rem;
+.intro__heading {
+  font-size: 100%;
+  font-family: "Seymour One", sans-serif;
 }
-.header .intro__subheading {
+.intro__subheading {
   font-family: "Caveat", cursive;
-  font-size: 1.9rem;
+  font-size: 133%;
 }
-.header .intro__icon-div {
+.intro__icon-div {
   margin-top: 80%;
 }
-.header .intro__icon {
+.intro__icon {
   display: block;
   margin-top: 5%;
 }
@@ -178,6 +117,9 @@ p {
 }
 .about__icon-div {
   margin-top: 10%;
+}
+.about__icon {
+  padding: 6%;
 }
 .about__text-container {
   background-color: #014d64;
@@ -251,17 +193,9 @@ p {
   height: 90%;
 }
 
-.icon {
-  padding: 6%;
-}
-
 .heading {
   font-size: 2rem;
   font-family: "Seymour One", sans-serif;
-}
-
-body {
-  background-color: #161010;
 }
 
 .wave-blue {
@@ -274,6 +208,90 @@ body {
   background-color: #0296A5;
 }
 
-i {
-  font-size: 1.6rem;
+.header {
+  display: flex;
+  height: 110vh;
+  justify-content: center;
+  padding: 55% 5% 0;
+  background-image: url(/imgs/casey-horner-mPnxwQBtUZE-unsplash.jpg);
+  background-size: cover;
+}
+
+/* mobile phone breakpoint */
+@media all and (max-width: 490px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar__menu {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+  .navbar__menu:hover {
+    cursor: pointer;
+  }
+  .navbar__navList {
+    width: 100%;
+    display: none;
+  }
+  .navbar__listItem {
+    display: block;
+    border-top: 1px solid #ede7e3;
+    text-align: center;
+  }
+  .navbar__listItem:last-child {
+    border-bottom: 1px solid #ede7e3;
+  }
+  .navbar__div-logo {
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+  .navbar .active {
+    display: block;
+  }
+}
+/* tablet media query breakpoint */
+@media all and (min-width: 768px) {
+  * {
+    font-size: 1.3rem;
+  }
+
+  i {
+    font-size: 2rem;
+  }
+
+  .navbar__logo {
+    font-size: 2.4rem;
+  }
+  .navbar__listItem {
+    padding: 10px 24px;
+  }
+
+  .header {
+    padding-top: 40%;
+  }
+
+  .intro__heading {
+    font-size: 166%;
+  }
+  .intro__subheading {
+    font-size: 200%;
+  }
+  .intro__icon-div {
+    margin-top: 38%;
+  }
+}
+/* desktop media query breakpoint */
+@media all and (min-width: 1024px) {
+  .navbar__navList {
+    font-size: 2rem;
+  }
+  .navbar__logo {
+    font-size: 3rem;
+  }
+  .navbar__listItem {
+    padding: 10px 36px;
+  }
 }
