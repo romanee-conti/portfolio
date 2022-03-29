@@ -28,11 +28,11 @@
         display: inline-block;
         list-style-type: none;
         padding: 10px 10px;
-    }
 
         a:hover {
             color: $color-alt;
         }
+    }
 
     &__menu {
         border: solid 0.25px $color-white;

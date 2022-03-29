@@ -56,7 +56,7 @@ body {
   list-style-type: none;
   padding: 10px 10px;
 }
-.navbar a:hover {
+.navbar__listItem a:hover {
   color: #AE3C57;
 }
 .navbar__menu {

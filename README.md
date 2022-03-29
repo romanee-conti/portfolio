@@ -1,5 +1,7 @@
 Portfolio Project
 
+Link to Figma Design: https://www.figma.com/file/tPMLdKWDMnQ9a532c2aEsD/Portfolio-Website?node-id=29%3A14
+
 It is time to put what you have been learning to the test here is your first project brief!
 Your challenge is to put everything you’ve learned in Module 2 to the test by designing, prototyping and building your own portfolio website. This website will form the foundation of your final portfolio at the end of the course, allowing you to showcase yourself and your work to its best potential. You are obviously free to iterate on the design of it as you progress through the course, but the aim for now is a high quality first draft that we can connect all your future projects to.
 
