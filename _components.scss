@@ -128,8 +128,26 @@
     &__heading {
         padding-top: 30%;
     }
-
 }
+
+.project-card {
+    padding: 10% 10%;
+
+    &__img-div {
+        margin: 10% auto;
+    }
+
+    &__heading {
+        font-weight: 700;
+        margin-bottom: 10%;
+    }
+}
+
+.project-card:last-child {
+    background-color: $color-tertiary;
+    padding-bottom: 30vh;
+}
+
 
 /* Footer */
 
@@ -157,24 +175,6 @@
 }
 
 /* General Classes for Elements */
-
-.project-card {
-    padding: 10% 10%;
-
-    &__img-div {
-        margin: 10% auto;
-    }
-
-    &__heading {
-        font-weight: 700;
-        margin-bottom: 10%;
-    }
-}
-
-.project-card:last-child {
-    background-color: $color-tertiary;
-    padding-bottom: 30vh;
-}
 
 .img-div {
     height: 200px;
