@@ -22,7 +22,7 @@ p {
 }
 
 i {
-  font-size: 120%;
+  font-size: 110%;
 }
 
 body {
@@ -90,7 +90,7 @@ body {
   font-size: 133%;
 }
 .intro__icon-div {
-  margin-top: 80%;
+  margin-top: 70%;
 }
 .intro__icon {
   display: block;
@@ -162,10 +162,17 @@ body {
 }
 .footer__icon-div {
   width: 100%;
+  padding: 3% 0;
 }
 .footer__icon {
   color: #E75F73;
-  padding: 3% 5%;
+}
+.footer__link {
+  font-size: 1.5rem;
+  margin: 0 5%;
+}
+.footer__link i:hover {
+  color: #ede7e3;
 }
 .footer__text {
   color: #E75F73;
@@ -195,12 +202,7 @@ body {
   font-family: "Seymour One", sans-serif;
 }
 
-.wave-blue {
-  vertical-align: top;
-  background-color: #0296A5;
-}
-
-.wave-green {
+.wave {
   vertical-align: top;
   background-color: #0296A5;
 }
@@ -256,7 +258,7 @@ body {
   }
 
   .header {
-    padding-top: 40%;
+    padding-top: 50%;
   }
 
   i {
@@ -281,10 +283,10 @@ body {
   }
 
   .intro__heading {
-    font-size: 166%;
+    font-size: 150%;
   }
   .intro__subheading {
-    font-size: 200%;
+    font-size: 175%;
   }
   .intro__icon-div {
     margin-top: 38%;
@@ -425,8 +427,8 @@ body {
   .footer {
     background-color: #0A4F57;
   }
-  .footer__icon-div {
-    font-size: 90%;
+  .footer__link {
+    font-size: 1.75rem;
   }
   .footer__text {
     font-size: 1.1rem;

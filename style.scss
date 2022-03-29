@@ -56,7 +56,7 @@
     }
 
     .header {
-        padding-top: 40%;
+        padding-top: 50%;
     }
 
     i {
@@ -87,11 +87,11 @@
     .intro {
 
         &__heading {
-            font-size: 166%;
+            font-size: 150%;
         }
 
         &__subheading {
-            font-size: 200%;
+            font-size: 175%;
         }
 
         &__icon-div {
@@ -273,8 +273,8 @@
     .footer {
         background-color: $color-tertiary;
 
-        &__icon-div {
-            font-size: 90%;
+        &__link {
+            font-size: 1.75rem;
         }
 
         &__text {
