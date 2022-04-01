@@ -42,7 +42,7 @@ body {
 }
 .navbar__div-logo {
   transform: rotate(-5deg);
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 .navbar__logo {
   font-family: "Caveat", cursive;
@@ -54,7 +54,7 @@ body {
 .navbar__listItem {
   display: inline-block;
   list-style-type: none;
-  padding: 10px 10px;
+  padding: 10px;
 }
 .navbar__listItem a:hover {
   color: #AE3C57;
@@ -138,7 +138,7 @@ body {
 }
 
 .project-card {
-  padding: 10% 10%;
+  padding: 10%;
 }
 .project-card__img-div {
   margin: 10% auto;
@@ -394,7 +394,7 @@ body {
   }
 
   .project-card {
-    padding: 5% 5%;
+    padding: 5%;
     display: flex;
   }
   .project-card__img-div {

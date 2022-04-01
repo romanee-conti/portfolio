@@ -1,19 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato:wght@400;700&family=Seymour+One&display=swap');
-
-$font-body: "Lato", sans-serif;   /* @ 400 & 700 */
-$font-display: "Seymour One", sans-serif;   /* @ one-size */
-$font-cursive: "Caveat", cursive;   /* @ 700 */
-
-$color-primary: #014d64;
-$color-secondary: #0296A5;
-$color-tertiary: #0A4F57;
-$color-alt: #AE3C57;
-$color-highlight: #E75F73;
-
-$color-white: #ede7e3;
-$color-black: #161010;
-
-$color-opaque: rgb(1, 77, 100, .9);
+@use "./variables" as *;
 
 * {
     margin: 0;

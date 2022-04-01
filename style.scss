@@ -1,6 +1,7 @@
-@import "./base";
-@import "./components";
-@import "./layout";
+@use "./variables" as *;
+@use "./base" as *;
+@use "./components" as *;
+@use "./layout" as *;
 
 /* mobile phone breakpoint */
 
@@ -231,7 +232,7 @@
     }
 
     .project-card {
-        padding: 5% 5%;
+        padding: 5%;
         display: flex;
 
         &__img-div {
